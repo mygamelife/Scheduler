@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "LedSM.h"
 #include "Message.h"
+#include "Button.h"
 
 void ledInitData(LedData *data)  {
   data->state = LED_OFF;

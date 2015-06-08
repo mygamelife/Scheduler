@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "ButtonSM.h"
 #include "Message.h"
+#include "Button.h"
 
 void buttonInitData(ButtonData *data)  {
   data->state = RELEASE;
@@ -9,11 +10,17 @@ void buttonInitData(ButtonData *data)  {
 void buttonSM(ButtonData *data) {
   switch(data->state)  {
     case RELEASE:
-      if(msg == CHANGE_MODE)
+      if(buttonStat()) {
         data->state = PRESS;
+        msg = CHANGE_MODE;
+      }
     break;
 
     case PRESS:
+      if(!buttonStat())  {
+        data->state = RELEASE;
+        msg = DO_NOTHING;
+      }
       break;
 
     default:
