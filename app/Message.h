@@ -2,7 +2,9 @@
 #define Message_H
 
 typedef enum {
-  DoNothing,
+  DO_NOTHING,
+  CHANGE_MODE,
 } Message;
 
+extern Message msg;
 #endif // Message_H

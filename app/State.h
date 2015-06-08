@@ -2,6 +2,7 @@
 #define State_H
 
 typedef enum {
+  START,
   PRESS,
   RELEASE,
   LED_ON,

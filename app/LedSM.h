@@ -7,6 +7,6 @@
 typedef struct {
   State state;
   uint32_t time;
-} LedState;
+} LedData;
 
 #endif // LedSM_H
