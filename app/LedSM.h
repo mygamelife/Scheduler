@@ -3,6 +3,10 @@
 
 #include <stdint.h>
 #include "State.h"
+#include "Timer.h"
+#include "Message.h"
+#include "Button.h"
+#include "LED.h"
 
 typedef struct {
   State state;
