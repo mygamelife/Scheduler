@@ -1,2 +1,4 @@
 build/*
+src/*
 !build/README.txt
+!src/README.txt
