@@ -1,7 +1,7 @@
 #include "Timer.h"
 static uint32_t currentTime = 0;
 
-uint32_t getCurrentTime(){
+/*uint32_t getCurrentTime(){
 	static uint32_t counter = 0;
 
 	if(counter++ >= 100){
@@ -9,6 +9,10 @@ uint32_t getCurrentTime(){
 		currentTime++;
 	}
 	return currentTime;
+}*/
+
+uint32_t getCurrentTime(){
+	return HAL_GetTick()/2;
 }
 
 void delay(uint32_t delayCycle){
@@ -33,9 +37,9 @@ int halfSecHasNotExpired()	{
 
 	if((getCurrentTime() - previousTime) > 500)	{
 		previousTime = getCurrentTime();
-		return 0;
+		return 1;
 	}
-	return 1;
+	return 0;
 }
 
 int oneHundredMiliSecHasNotExpired()	{
@@ -43,9 +47,9 @@ int oneHundredMiliSecHasNotExpired()	{
 
 	if((getCurrentTime() - previousTime) > 100)	{
 		previousTime = getCurrentTime();
-		return 0;
+		return 1;
 	}
-	return 1;
+	return 0;
 }
 
 int threeHundredSecHasNotExpired()	{
@@ -53,8 +57,8 @@ int threeHundredSecHasNotExpired()	{
 
 	if((getCurrentTime() - previousTime) > 600)	{
 		previousTime = getCurrentTime();
-		return 0;
+		return 1;
 	}
-	return 1;
+	return 0;
 }
 

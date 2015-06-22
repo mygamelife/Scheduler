@@ -10,9 +10,13 @@
 #define FIVE_HUNDRED_MILI_SEC 500
 
 #include "stm32f4xx_hal_gpio.h"
+#include "stm32f4xx_it.h"
 
 uint32_t getCurrentTime();
 void delay(uint32_t delayCycle);
 int waitForDelay(int delayMilliSecond);
+int oneHundredMiliSecHasNotExpired();
+int halfSecHasNotExpired();
+int threeHundredSecHasNotExpired();
 
 #endif // Timer_H

@@ -17,7 +17,6 @@ void ledSM(LedData *data) {
             break;
 
         case LED_BLINKING_ON:
-            turnOnLED1();
 
             if(msg == CHANGE_MODE) {
                 data->state = LED_ON;
@@ -25,13 +24,14 @@ void ledSM(LedData *data) {
             }
 
             else {
-                if(oneHundredMiliSecHasNotExpired())
+                if(oneHundredMiliSecHasNotExpired())	{
                     data->state = LED_BLINKING_OFF;
+                    turnOnLED1();
+                }
             }
             break;
 
         case LED_BLINKING_OFF:
-            turnOffLED1();
 
             if(msg == CHANGE_MODE) {
                 data->state = LED_ON;
@@ -39,8 +39,10 @@ void ledSM(LedData *data) {
             }
 
             else {
-                if(oneHundredMiliSecHasNotExpired())
+                if(oneHundredMiliSecHasNotExpired())	{
                     data->state = LED_BLINKING_ON;
+                    turnOffLED1();
+                }
             }
             break;
 
@@ -54,7 +56,7 @@ void ledSM(LedData *data) {
             break;
 
         default:
-            printf("Error: unknown state encountered in ledSM: %d\n", data->state);
+            //printf("Error: unknown state encountered in ledSM: %d\n", data->state);
             break;
   }
 }

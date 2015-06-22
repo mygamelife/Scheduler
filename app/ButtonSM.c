@@ -24,7 +24,7 @@ void buttonSM(ButtonData *data) {
       break;
 
     default:
-      printf("Error: unknown state encountered in buttonSM: %d\n", data->state);
+      //log("Error: unknown state encountered in buttonSM: %d\n", data->state);
       break;
   }
 }

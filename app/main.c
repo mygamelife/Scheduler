@@ -1,3 +1,4 @@
+#include "stm32f4xx_it.h"
 #include "stm32f4xx_hal.h"
 #include "stm32f4xx_hal_gpio.h"
 #include "LED.h"
@@ -9,21 +10,32 @@
 #include "ButtonSM.h"
 #include "Message.h"
 
+void testFunc(void);
+
 int main(void)	{
-	static int *state_LED1 = INITIAL, *state_LED2 = INITIAL, *state_LED3 = INITIAL;
-	TaskBlock tb,tb2,tb3;
+  testFunc();
+  
+	ButtonData buttonData;
+	LedData ledData;
 
 	configureLED();
 	initButton();
-	//initTaskBlock(&tb);
-	//initTaskBlock(&tb2);
-	//initTaskBlock(&tb3);
+	initSysTick();
+
+	buttonInitData(&buttonData);
+	ledInitData(&ledData);
 
     while(1)	{
-    	LED1(&tb);
-    	LED2(&tb2);
-    	LED3(&tb3);
+    	buttonSM(&buttonData);
+    	ledSM(&ledData);
     }
+}
+
+void initSysTick()	{
+	if(SysTick_Config(SystemCoreClock / 1000))	{
+		//Capture error
+		while(1);
+	}
 }
 
 void LED1(TaskBlock *tb)	{
