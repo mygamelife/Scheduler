@@ -20,16 +20,10 @@
 <part id="2"/>
 <part id="3"/>
 <part id="4"/>
-<part id="5"/>
-<part id="6"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="C:/Users/D203C-01/Desktop/TDDBlinkLEDWithButtonIn3Mode/app/main.c" title="main.c" tooltip="C:/Users/D203C-01/Desktop/TDDBlinkLEDWithButtonIn3Mode/app/main.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/exploreCC/Library/main.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="361" selectionTopPixel="45"/>
-</editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="Yield.h" partName="Yield.h" path="C:/Users/D203C-01/Desktop/TDDBlinkLEDWithButtonIn3Mode/app/Yield.h" title="Yield.h" tooltip="C:/Users/D203C-01/Desktop/TDDBlinkLEDWithButtonIn3Mode/app/Yield.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/exploreCC/Library/Yield.h"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
@@ -38,21 +32,17 @@
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/exploreCC/Library/Timer.c"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="265" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="LedSM.c" partName="LedSM.c" path="C:/Users/D203C-01/Desktop/TDDBlinkLEDWithButtonIn3Mode/app/LedSM.c" title="LedSM.c" tooltip="C:/Users/D203C-01/Desktop/TDDBlinkLEDWithButtonIn3Mode/app/LedSM.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/exploreCC/Library/LedSM.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="993" selectionTopPixel="180"/>
-</editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="Timer.h" partName="Timer.h" path="C:/Users/D203C-01/Desktop/TDDBlinkLEDWithButtonIn3Mode/app/Timer.h" title="Timer.h" tooltip="C:/Users/D203C-01/Desktop/TDDBlinkLEDWithButtonIn3Mode/app/Timer.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/exploreCC/Library/Timer.h"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="506" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.asm.AsmEditor" name="startup_stm32f429xx.s" partName="startup_stm32f429xx.s" path="C:/Users/D203C-01/Desktop/TDDBlinkLEDWithButtonIn3Mode/app/startup_stm32f429xx.s" title="startup_stm32f429xx.s" tooltip="C:/Users/D203C-01/Desktop/TDDBlinkLEDWithButtonIn3Mode/app/startup_stm32f429xx.s" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/exploreCC/startup_stm32f429xx.s"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3665" selectionTopPixel="1005"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.asm.AsmEditor" name="assembly.s" partName="assembly.s" path="C:/Users/D203C-01/Desktop/TDDBlinkLEDWithButtonIn3Mode/app/assembly.s" title="assembly.s" tooltip="C:/Users/D203C-01/Desktop/TDDBlinkLEDWithButtonIn3Mode/app/assembly.s" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.asm.AsmEditor" name="assembly.s" partName="assembly.s" path="C:/Users/D203C-01/Desktop/Scheduler/app/assembly.s" title="assembly.s" tooltip="C:/Users/D203C-01/Desktop/Scheduler/app/assembly.s" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/exploreCC/Library/assembly.s"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="267" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="393" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="C:/Users/D203C-01/Desktop/Scheduler/app/main.c" title="main.c" tooltip="C:/Users/D203C-01/Desktop/Scheduler/app/main.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/exploreCC/Library/main.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="296" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -82,6 +72,11 @@
 </view>
 <view id="org.eclipse.ui.console.ConsoleView" partName="Console">
 <viewState/>
+</view>
+<view id="org.eclipse.cdt.debug.ui.memory.memorybrowser.MemoryBrowser" partName="Memory Browser">
+<viewState>
+<MemoryBroser ComboItemsValue="0x2001FFdc;" FocuseTabIndex="0" TabsValue="" TextValue="0x2001ffdc" horizontalPosition="0" verticalPosition="0"/>
+</viewState>
 </view>
 <view id="org.eclipse.cdt.dsf.debug.ui.disassembly.view" partName="Disassembly">
 <viewState disassembly.syncActiveContext="true" disassembly.trackExpression="false"/>
@@ -115,8 +110,8 @@
 <hide_menu_item_id id="org.coocox.codebugger.configuration.showMemoryBrowserAction"/>
 <hide_menu_item_id id="org.coocox.codebugger.configuration.showVariablesAction"/>
 <hide_menu_item_id id="org.coocox.builder.ui.openProjectExplorerAction"/>
-<hide_menu_item_id id="org.coocox.codebugger.trace.actions.ShowTraceControlAction"/>
 <hide_menu_item_id id="org.eclipse.debug.ui.commands.TerminateAndRelaunch"/>
+<hide_menu_item_id id="org.coocox.codebugger.trace.actions.ShowTraceControlAction"/>
 <hide_menu_item_id id="org.coocox.codebugger.configuration.showRegistersAction"/>
 <hide_toolbar_item_id id="org.eclipse.cdt.debug.internal.ui.actions.ToggleInstructionStepModeAction"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
@@ -153,7 +148,7 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.21933962" ratioLeft="279" ratioRight="993" relationship="2" relative="org.eclipse.ui.internal.ViewStack@1e87506"/>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@5b1549" ratio="0.71903324" ratioLeft="714" ratioRight="279" relationship="2" relative="org.eclipse.ui.editorss">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@5b1549" ratio="0.6960486" ratioLeft="687" ratioRight="300" relationship="2" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <page content="org.eclipse.debug.ui.BreakpointView" label="LabelNotFound"/>
@@ -207,15 +202,16 @@
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
 <hide_toolbar_item_id id="org.coocox.builder.ui.build"/>
 <hide_toolbar_item_id id="org.coocox.welcome.ui.action.welcome"/>
-<hide_toolbar_item_id id="org.coocox.component.ui.ShowRepositoryAction"/>
 <hide_toolbar_item_id id="org.coocox.codebugger.configuration.coideProgramDownloadAction"/>
+<hide_toolbar_item_id id="org.coocox.component.ui.ShowRepositoryAction"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="org.eclipse.debug.ui.DebugView"/>
 <view id="org.coocox.codebugger.trace.ui.traceview"/>
 <view id="org.eclipse.debug.ui.VariableView"/>
+<view id="org.eclipse.cdt.debug.ui.memory.memorybrowser.MemoryBrowser"/>
 <view id="org.coocox.builder.ui.views.ProjectView"/>
-<view id="org.eclipse.cdt.dsf.debug.ui.disassembly.view"/>
 <view id="org.eclipse.debug.ui.RegisterView"/>
+<view id="org.eclipse.cdt.dsf.debug.ui.disassembly.view"/>
 <fastViewBars/>
 <viewLayoutRec closeable="false" id="org.eclipse.debug.ui.DebugView"/>
 <layout>
@@ -246,20 +242,21 @@
 </folder>
 </info>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@1c835de" ratio="0.5" ratioLeft="636" ratioRight="636" relationship="2" relative="org.eclipse.ui.internal.ViewStack@6df156">
-<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">
+<folder activePageID="org.eclipse.cdt.debug.ui.memory.memorybrowser.MemoryBrowser" appearance="2" expanded="2">
 <page content="org.coocox.codebugger.trace.ui.traceview" label="Semihosting"/>
 <page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
+<page content="org.eclipse.cdt.debug.ui.memory.memorybrowser.MemoryBrowser" label="Memory Browser"/>
 <page content="org.eclipse.debug.ui.ExpressionView" label="LabelNotFound"/>
 <page content="org.eclipse.debug.ui.MemoryView" label="LabelNotFound"/>
-<page content="org.eclipse.cdt.debug.ui.memory.memorybrowser.MemoryBrowser" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
+<part id="2"/>
 </presentation>
 </folder>
 </info>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@60d73d" ratio="0.75" ratioLeft="954" ratioRight="318" relationship="2" relative="org.eclipse.ui.internal.ViewStack@1062c97">
-<folder activePageID="org.eclipse.cdt.dsf.debug.ui.disassembly.view" appearance="2" expanded="2">
+<folder activePageID="org.eclipse.debug.ui.RegisterView" appearance="2" expanded="2">
 <page content="org.eclipse.debug.ui.RegisterView" label="Registers"/>
 <page content="org.eclipse.cdt.dsf.debug.ui.disassembly.view" label="Disassembly"/>
 <page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
@@ -278,164 +275,164 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/exploreCC/Library/LedSM.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/exploreCC/Library/Timer.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/exploreCC/Library/main.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/exploreCC/Hardware/stm32f4xx_hal.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/exploreCC/Library/Timer.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/exploreCC/Library/Yield.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.asm.AsmEditor" path="/exploreCC/startup_stm32f429xx.s"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.asm.AsmEditor" path="/exploreCC/Library/assembly.s"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.asm.AsmEditor" path="/exploreCC/startup_stm32f429xx.s"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/exploreCC/Library/main.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/exploreCC/Library/main.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/exploreCC/Library/main.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/exploreCC/Library/main.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/exploreCC/Library/main.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/exploreCC/Library/main.c"/>
 </editors>
-<item historyLabel="Timer.h" index="4">
-<position info="not_deleted" x="500" y="0"/>
+<item historyLabel="assembly.s" index="0">
+<position info="not_deleted" x="381" y="0"/>
 </item>
-<item historyLabel="LedSM.c" index="0">
-<position info="not_deleted" x="1084" y="0"/>
-</item>
-<item historyLabel="Timer.c" index="1">
-<position info="not_deleted" x="646" y="26"/>
-</item>
-<item historyLabel="LedSM.c" index="0">
-<position info="not_deleted" x="610" y="0"/>
-</item>
-<item historyLabel="Timer.h" index="4">
-<position info="not_deleted" x="537" y="0"/>
-</item>
-<item historyLabel="stm32f4xx_hal.c" index="3">
-<position info="not_deleted" x="13295" y="0"/>
-</item>
-<item historyLabel="Timer.h" index="4">
-<position info="not_deleted" x="15" y="0"/>
-</item>
-<item historyLabel="LedSM.c" index="0">
-<position info="not_deleted" x="610" y="0"/>
-</item>
-<item historyLabel="Timer.c" index="1">
-<position info="not_deleted" x="839" y="0"/>
-</item>
-<item historyLabel="LedSM.c" index="0">
-<position info="not_deleted" x="610" y="0"/>
-</item>
-<item historyLabel="Timer.h" index="4">
-<position info="not_deleted" x="438" y="32"/>
-</item>
-<item historyLabel="LedSM.c" index="0">
-<position info="not_deleted" x="610" y="0"/>
-</item>
-<item historyLabel="Timer.c" index="1">
-<position info="not_deleted" x="839" y="0"/>
-</item>
-<item historyLabel="Yield.h" index="5">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="main.c" index="2">
-<position info="not_deleted" x="447" y="0"/>
-</item>
-<item historyLabel="Yield.h" index="5">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Timer.c" index="1">
-<position info="not_deleted" x="839" y="0"/>
-</item>
-<item historyLabel="LedSM.c" index="0">
-<position info="not_deleted" x="993" y="0"/>
-</item>
-<item historyLabel="main.c" index="2">
-<position info="not_deleted" x="1276" y="45"/>
-</item>
-<item historyLabel="Timer.c" index="1">
-<position info="not_deleted" x="839" y="0"/>
-</item>
-<item historyLabel="Yield.h" index="5">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="LedSM.c" index="0">
-<position info="not_deleted" x="993" y="0"/>
-</item>
-<item historyLabel="main.c" index="2">
-<position info="not_deleted" x="1287" y="0"/>
-</item>
-<item historyLabel="Timer.c" index="1">
-<position info="not_deleted" x="1085" y="0"/>
-</item>
-<item historyLabel="Timer.h" index="4">
-<position info="not_deleted" x="438" y="32"/>
-</item>
-<item historyLabel="Timer.c" index="1">
-<position info="not_deleted" x="1022" y="30"/>
-</item>
-<item historyLabel="LedSM.c" index="0">
-<position info="not_deleted" x="993" y="0"/>
-</item>
-<item historyLabel="Timer.h" index="4">
-<position info="not_deleted" x="506" y="0"/>
-</item>
-<item historyLabel="LedSM.c" index="0">
-<position info="not_deleted" x="993" y="0"/>
-</item>
-<item historyLabel="Timer.c" index="1">
-<position info="not_deleted" x="808" y="0"/>
-</item>
-<item historyLabel="LedSM.c" index="0">
-<position info="not_deleted" x="993" y="0"/>
-</item>
-<item historyLabel="Timer.c" index="1">
-<position info="not_deleted" x="265" y="0"/>
-</item>
-<item historyLabel="startup_stm32f429xx.s" index="6">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="main.c" index="2">
-<position info="not_deleted" x="1287" y="0"/>
-</item>
-<item historyLabel="startup_stm32f429xx.s" index="6">
-<position info="not_deleted" x="1596" y="0"/>
-</item>
-<item historyLabel="main.c" index="2">
-<position info="not_deleted" x="296" y="0"/>
-</item>
-<item historyLabel="assembly.s" index="7">
-<position info="not_deleted" x="161" y="0"/>
-</item>
-<item historyLabel="startup_stm32f429xx.s" index="6">
-<position info="not_deleted" x="1596" y="0"/>
-</item>
-<item historyLabel="main.c" index="2">
-<position info="not_deleted" x="296" y="0"/>
-</item>
-<item historyLabel="assembly.s" index="7">
-<position info="not_deleted" x="155" y="0"/>
-</item>
-<item historyLabel="assembly.s" index="7">
-<position info="not_deleted" x="281" y="0"/>
-</item>
-<item historyLabel="startup_stm32f429xx.s" index="6">
-<position info="not_deleted" x="3665" y="0"/>
-</item>
-<item historyLabel="main.c" index="2">
-<position info="not_deleted" x="296" y="0"/>
-</item>
-<item historyLabel="assembly.s" index="7">
-<position info="not_deleted" x="155" y="0"/>
-</item>
-<item historyLabel="assembly.s" index="7">
-<position info="not_deleted" x="175" y="0"/>
-</item>
-<item historyLabel="assembly.s" index="7">
-<position info="not_deleted" x="195" y="0"/>
-</item>
-<item historyLabel="assembly.s" index="7">
-<position info="not_deleted" x="283" y="0"/>
+<item historyLabel="assembly.s" index="0">
+<position info="not_deleted" x="541" y="0"/>
 </item>
 <item historyLabel="main.c" index="2">
 <position info="not_deleted" x="361" y="0"/>
 </item>
-<item historyLabel="assembly.s" index="7">
-<position info="not_deleted" x="283" y="0"/>
+<item historyLabel="assembly.s" index="0">
+<position info="not_deleted" x="382" y="0"/>
 </item>
-<item active="true" historyLabel="assembly.s" index="7">
-<position info="not_deleted" x="215" y="68"/>
+<item historyLabel="startup_stm32f429xx.s" index="1">
+<position/>
+</item>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="296" y="0"/>
+</item>
+<item historyLabel="assembly.s" index="0">
+<position info="not_deleted" x="155" y="0"/>
+</item>
+<item historyLabel="assembly.s" index="0">
+<position info="not_deleted" x="175" y="0"/>
+</item>
+<item historyLabel="assembly.s" index="0">
+<position info="not_deleted" x="195" y="0"/>
+</item>
+<item historyLabel="assembly.s" index="0">
+<position info="not_deleted" x="215" y="0"/>
+</item>
+<item historyLabel="assembly.s" index="0">
+<position info="not_deleted" x="239" y="0"/>
+</item>
+<item historyLabel="assembly.s" index="0">
+<position info="not_deleted" x="260" y="0"/>
+</item>
+<item historyLabel="assembly.s" index="0">
+<position info="not_deleted" x="338" y="0"/>
+</item>
+<item historyLabel="assembly.s" index="0">
+<position info="not_deleted" x="360" y="0"/>
+</item>
+<item historyLabel="assembly.s" index="0">
+<position info="not_deleted" x="357" y="0"/>
+</item>
+<item historyLabel="startup_stm32f429xx.s" index="1">
+<position/>
+</item>
+<item historyLabel="main.c" index="4">
+<position info="not_deleted" x="296" y="0"/>
+</item>
+<item historyLabel="assembly.s" index="0">
+<position info="not_deleted" x="155" y="0"/>
+</item>
+<item historyLabel="assembly.s" index="0">
+<position info="not_deleted" x="175" y="0"/>
+</item>
+<item historyLabel="assembly.s" index="0">
+<position info="not_deleted" x="195" y="0"/>
+</item>
+<item historyLabel="assembly.s" index="0">
+<position info="not_deleted" x="215" y="0"/>
+</item>
+<item historyLabel="assembly.s" index="0">
+<position info="not_deleted" x="239" y="0"/>
+</item>
+<item historyLabel="assembly.s" index="0">
+<position info="not_deleted" x="260" y="0"/>
+</item>
+<item historyLabel="assembly.s" index="0">
+<position info="not_deleted" x="338" y="0"/>
+</item>
+<item historyLabel="assembly.s" index="0">
+<position info="not_deleted" x="360" y="0"/>
+</item>
+<item historyLabel="assembly.s" index="0">
+<position info="not_deleted" x="381" y="0"/>
+</item>
+<item historyLabel="startup_stm32f429xx.s" index="1">
+<position/>
+</item>
+<item historyLabel="main.c" index="5">
+<position info="not_deleted" x="296" y="0"/>
+</item>
+<item historyLabel="assembly.s" index="0">
+<position info="not_deleted" x="155" y="0"/>
+</item>
+<item historyLabel="assembly.s" index="0">
+<position info="not_deleted" x="175" y="0"/>
+</item>
+<item historyLabel="assembly.s" index="0">
+<position info="not_deleted" x="195" y="0"/>
+</item>
+<item historyLabel="assembly.s" index="0">
+<position info="not_deleted" x="215" y="0"/>
+</item>
+<item historyLabel="assembly.s" index="0">
+<position info="not_deleted" x="239" y="0"/>
+</item>
+<item historyLabel="assembly.s" index="0">
+<position info="not_deleted" x="260" y="0"/>
+</item>
+<item historyLabel="assembly.s" index="0">
+<position info="not_deleted" x="338" y="0"/>
+</item>
+<item historyLabel="assembly.s" index="0">
+<position info="not_deleted" x="360" y="0"/>
+</item>
+<item historyLabel="assembly.s" index="0">
+<position info="not_deleted" x="381" y="0"/>
+</item>
+<item historyLabel="startup_stm32f429xx.s" index="1">
+<position info="not_deleted" x="3665" y="0"/>
+</item>
+<item historyLabel="main.c" index="6">
+<position info="not_deleted" x="296" y="0"/>
+</item>
+<item historyLabel="assembly.s" index="0">
+<position info="not_deleted" x="155" y="0"/>
+</item>
+<item historyLabel="main.c" index="7">
+<position info="not_deleted" x="296" y="0"/>
+</item>
+<item historyLabel="assembly.s" index="0">
+<position info="not_deleted" x="155" y="0"/>
+</item>
+<item historyLabel="assembly.s" index="0">
+<position info="not_deleted" x="175" y="0"/>
+</item>
+<item historyLabel="assembly.s" index="0">
+<position info="not_deleted" x="195" y="0"/>
+</item>
+<item historyLabel="assembly.s" index="0">
+<position info="not_deleted" x="215" y="0"/>
+</item>
+<item historyLabel="assembly.s" index="0">
+<position info="not_deleted" x="239" y="0"/>
+</item>
+<item historyLabel="assembly.s" index="0">
+<position info="not_deleted" x="260" y="0"/>
+</item>
+<item historyLabel="assembly.s" index="0">
+<position info="not_deleted" x="490" y="0"/>
+</item>
+<item historyLabel="assembly.s" index="0">
+<position info="not_deleted" x="551" y="0"/>
+</item>
+<item active="true" historyLabel="assembly.s" index="0">
+<position info="not_deleted" x="732" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -444,11 +441,17 @@
 <actionBarAdvisor/>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.asm.AsmEditor" name="assembly.s" tooltip="exploreCC/Library/assembly.s">
-<persistable path="/exploreCC/Library/assembly.s"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="exploreCC/Library/main.c">
+<persistable path="/exploreCC/Library/main.c"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.asm.AsmEditor" name="startup_stm32f429xx.s" tooltip="exploreCC/startup_stm32f429xx.s">
 <persistable path="/exploreCC/startup_stm32f429xx.s"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="LED.c" tooltip="exploreCC/Library/LED.c">
+<persistable path="/exploreCC/Library/LED.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.asm.AsmEditor" name="assembly.s" tooltip="exploreCC/Library/assembly.s">
+<persistable path="/exploreCC/Library/assembly.s"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_hal.c" tooltip="exploreCC/Hardware/stm32f4xx_hal.c">
 <persistable path="/exploreCC/Hardware/stm32f4xx_hal.c"/>
@@ -458,11 +461,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Timer.h" tooltip="exploreCC/Library/Timer.h">
 <persistable path="/exploreCC/Library/Timer.h"/>
-</file>
-<file factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.welcome.ui.WelcomePage" name="" tooltip="">
-<persistable>
-<org.coocox.welcome.ui.WelcomePage/>
-</persistable>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_it.c" tooltip="exploreCC/Library/stm32f4xx_it.c">
 <persistable path="/exploreCC/Library/stm32f4xx_it.c"/>
