@@ -17,6 +17,15 @@ c:/program files/gnu tools arm embedded/4.9 2015q1/bin/../lib/gcc/arm-none-eabi/
 c:/program files/gnu tools arm embedded/4.9 2015q1/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-__atexit.o)
                               c:/program files/gnu tools arm embedded/4.9 2015q1/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-atexit.o) (__register_exitproc)
 
+Allocating common symbols
+Common symbol       size              file
+
+taskTwoTcb          0x8               ..\obj\Task.o
+taskOneTcb          0x8               ..\obj\Task.o
+taskTwoStack        0x404             ..\obj\Task.o
+mainTcb             0x8               ..\obj\Task.o
+taskOneStack        0x404             ..\obj\Task.o
+
 Discarded input sections
 
  .text          0x00000000        0x0 c:/program files/gnu tools arm embedded/4.9 2015q1/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/crti.o
@@ -141,6 +150,21 @@ Discarded input sections
  .comment       0x00000000       0x71 ..\obj\Message.o
  .ARM.attributes
                 0x00000000       0x33 ..\obj\Message.o
+ .text          0x00000000       0xd4 ..\obj\Task.o
+ .data          0x00000000        0x0 ..\obj\Task.o
+ .bss           0x00000000        0x0 ..\obj\Task.o
+ .rodata        0x00000000       0x18 ..\obj\Task.o
+ .debug_info    0x00000000      0x23c ..\obj\Task.o
+ .debug_abbrev  0x00000000       0xd8 ..\obj\Task.o
+ .debug_aranges
+                0x00000000       0x20 ..\obj\Task.o
+ .debug_line    0x00000000      0x13b ..\obj\Task.o
+ .debug_str     0x00000000      0x1b4 ..\obj\Task.o
+ .comment       0x00000000       0x71 ..\obj\Task.o
+ .debug_frame   0x00000000       0x58 ..\obj\Task.o
+ .ARM.attributes
+                0x00000000       0x33 ..\obj\Task.o
+ COMMON         0x00000000      0x820 ..\obj\Task.o
  .data          0x00000000        0x0 ..\obj\main.o
  .data          0x00000000        0x0 ..\obj\stm32f4xx_it.o
  .bss           0x00000000        0x0 ..\obj\stm32f4xx_it.o
@@ -148,7 +172,6 @@ Discarded input sections
  .bss           0x00000000        0x0 ..\obj\stm32f4xx_hal_gpio.o
  .data          0x00000000        0x0 ..\obj\Button.o
  .bss           0x00000000        0x0 ..\obj\Button.o
- .data          0x00000000        0x0 ..\obj\Timer.o
  .text          0x00000000      0x104 ..\obj\LedSM.o
  .data          0x00000000        0x0 ..\obj\LedSM.o
  .bss           0x00000000        0x0 ..\obj\LedSM.o
@@ -162,6 +185,7 @@ Discarded input sections
  .debug_frame   0x00000000       0x5c ..\obj\LedSM.o
  .ARM.attributes
                 0x00000000       0x33 ..\obj\LedSM.o
+ .data          0x00000000        0x0 ..\obj\Timer.o
  .data          0x00000000        0x0 ..\obj\stm32f4xx_hal_rcc.o
  .bss           0x00000000        0x0 ..\obj\stm32f4xx_hal_rcc.o
  .text          0x00000000       0x14 ..\obj\startup_stm32f429xx.o
@@ -611,12 +635,13 @@ LOAD ..\obj\SDLED1.o
 LOAD ..\obj\stm32f4xx_hal.o
 LOAD ..\obj\LED.o
 LOAD ..\obj\Message.o
+LOAD ..\obj\Task.o
 LOAD ..\obj\main.o
 LOAD ..\obj\stm32f4xx_it.o
 LOAD ..\obj\stm32f4xx_hal_gpio.o
 LOAD ..\obj\Button.o
-LOAD ..\obj\Timer.o
 LOAD ..\obj\LedSM.o
+LOAD ..\obj\Timer.o
 LOAD ..\obj\stm32f4xx_hal_rcc.o
 LOAD ..\obj\startup_stm32f429xx.o
 LOAD ..\obj\ButtonSM.o

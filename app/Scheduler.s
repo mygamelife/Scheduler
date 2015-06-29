@@ -12,20 +12,20 @@
   	.type taskSwitch, %function
     
 taskSwitch:
-    ldr     r0,   =#0xAAAAA
-    ldr     r1,   =#0x11111
-    ldr     r2,   =#0x22222
-    ldr     r3,   =#0x33333
-    ldr     r4,   =#0x44444
-    ldr     r5,   =#0x55555
-    ldr     r6,   =#0x66666
-    ldr     r7,   =#0x77777
-    ldr     r8,   =#0x88888
-    ldr     r9,   =#0x99999
-    ldr     r10,  =#0x0AAA0
-    ldr     r11,  =#0x1BBB1
-    ldr     r12,  =#0x2CCC2
-    ldr     lr,   =#0x3DDD3
+    ldr     r0,   =#0xAAAAAAAA
+    ldr     r1,   =#0x11111111
+    ldr     r2,   =#0x22222222
+    ldr     r3,   =#0x33333333
+    ldr     r4,   =#0x44444444
+    ldr     r5,   =#0x55555555
+    ldr     r6,   =#0x66666666
+    ldr     r7,   =#0x77777777
+    ldr     r8,   =#0x88888888
+    ldr     r9,   =#0x99999999
+    ldr     r10,  =#0x0AAAAAA0
+    ldr     r11,  =#0xBBBBBBBB
+    ldr     r12,  =#0xCCCCCCCC
+    ldr     lr,   =#0xDDDDDDDD
     push	  {r0}
     b		    .
 
@@ -72,3 +72,17 @@ taskSwitch:
 SysTick_Handler:
     stmdb 	sp!,	{r4-r11}
     b       .
+
+    
+//Exercise
+//#define in arm assembly
+//.equ TCB.SP, 8
+//.equ TCB.NEXT, 0
+//.equ TCB.NAME, 4
+//
+//
+//
+//
+//
+//
+//

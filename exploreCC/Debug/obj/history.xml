@@ -28,11 +28,14 @@
       <target file="stm32f4xx_it.o" lastModified="14e400835a9">
          <source file="..\..\..\..\stm32cubef4\STM32Cube_FW_F4_V1.5.0\Projects\STM32F429I-Discovery\Templates\Src\stm32f4xx_it.c" lastModified="14e40082c28"/>
       </target>
-      <target file="Scheduler.o" lastModified="14e40166282">
-         <source file="..\..\..\app\Scheduler.s" lastModified="14e40163f61"/>
-      </target>
       <target file="startup_stm32f429xx.o" lastModified="14e3fcdc6e7">
          <source file="..\..\..\app\startup_stm32f429xx.s" lastModified="14e3f837a2f"/>
+      </target>
+      <target file="Scheduler.o" lastModified="14e408af77b">
+         <source file="..\..\..\app\Scheduler.s" lastModified="14e4075ffda"/>
+      </target>
+      <target file="Task.o" lastModified="14e408f8bad">
+         <source file="..\..\..\app\Task.c" lastModified="14e408f1c48"/>
       </target>
       <target file="stm32f4xx_hal_cortex.o" lastModified="14e3fcdcb79">
          <source file="..\..\..\..\stm32cubef4\STM32Cube_FW_F4_V1.5.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c" lastModified="14c0ebff760"/>
