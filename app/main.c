@@ -10,24 +10,23 @@
 #include "ButtonSM.h"
 #include "Message.h"
 
-void testFunc(void);
+void taskSwitch(void);
 
 int main(void)	{
-  testFunc();
-  
-	ButtonData buttonData;
-	LedData ledData;
+	//ButtonData buttonData;
+	//LedData ledData;
 
-	configureLED();
-	initButton();
+	//configureLED();
+	//initButton();
 	initSysTick();
+	taskSwitch();
 
-	buttonInitData(&buttonData);
-	ledInitData(&ledData);
+	//buttonInitData(&buttonData);
+	//ledInitData(&ledData);
 
     while(1)	{
-    	buttonSM(&buttonData);
-    	ledSM(&ledData);
+    	//buttonSM(&buttonData);
+    	//ledSM(&ledData);
     }
 }
 
