@@ -9,6 +9,7 @@
 #include "LedSM.h"
 #include "ButtonSM.h"
 #include "Message.h"
+#include "Task.h"
 
 void taskSwitch(void);
 
@@ -19,6 +20,7 @@ int main(void)	{
 	//configureLED();
 	//initButton();
 	initSysTick();
+	initTcb();
 	taskSwitch();
 
 	//buttonInitData(&buttonData);

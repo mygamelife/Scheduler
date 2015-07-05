@@ -26,63 +26,58 @@ taskSwitch:
     ldr     r11,  =#0xBBBBBBBB
     ldr     r12,  =#0xCCCCCCCC
     ldr     lr,   =#0xDDDDDDDD
-    push	  {r0}
+    push	{r0}
     b		    .
 
     .align 8
     .type   SysTick_Handler, %function
-    
+    //#define in arm assembly
+    .equ TCB.NAME,  0
+    .equ TCB.SP,    4
 //   Decrement after
 //   +-------+
 //   |///////| <-	extra spaces depends on stack allign
 //   +-------+
-//   |  XPSR | 0x20000410
+//   |  XPSR |
 //   +-------+
-//   |  PC   | 0x2000040C
+//   |  PC   |
 //   +-------+
-//   |  LR   | 0x20000408
+//   |  LR   |
 //   +-------+
-//   |  r12  | 0x20000404
+//   |  r12  |
 //   +-------+
-//   |  r3   | 0x20000400
+//   |  r3   |
 //   +-------+
-//   |  r2   | 0x200003FC
+//   |  r2   |
 //   +-------+
-//   |  r1   | 0x200003F8
+//   |  r1   |
 //   +-------+
-//   |  r0   | 0x200003F4
+//   |  r0   |
 //   +-------+
-//   |  r11  | 0x200003F0
+//   |  r11  |
 //   +-------+
-//   |  r10  | 0x200003EC
+//   |  r10  |
 //   +-------+
-//   |  r9   | 0x200003E8
+//   |  r9   |
 //   +-------+
-//   |  r8   | 0x200003E4
+//   |  r8   |
 //   +-------+
-//   |  r7   | 0x200003E4
+//   |  r7   |
 //   +-------+
-//   |  r6   | 0x200003E4
+//   |  r6   |
 //   +-------+
-//   |  r5   | 0x200003E4
+//   |  r5   |
 //   +-------+
 //   |  r4   | <-	sp
 //   +-------+
 
 SysTick_Handler:
-    stmdb 	sp!,	{r4-r11}
-    b       .
+    stmdb 	sp!, {r4-r11}
+    push    {lr}
+    ldr     r0,  =mainTcb
+    ldr     sp,  [r0, #TCB.SP]
+    ldr     r0,  =taskOneTcb
+    ldr     sp,  [r0, #TCB.SP]
+    pop     {lr}
+    bx      lr
 
-    
-//Exercise
-//#define in arm assembly
-//.equ TCB.SP, 8
-//.equ TCB.NEXT, 0
-//.equ TCB.NAME, 4
-//
-//
-//
-//
-//
-//
-//
