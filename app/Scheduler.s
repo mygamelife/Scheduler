@@ -7,10 +7,12 @@
     .global   SysTick_Handler
     .extern   taskOneStack;
     .extern   taskTwoStack;
+    .extern   head;
      
   	.section  .text.taskSwitch
   	.type taskSwitch, %function
     
+    //MainTask
 taskSwitch:
     ldr     r0,   =#0xAAAAAAAA
     ldr     r1,   =#0x11111111
@@ -26,14 +28,15 @@ taskSwitch:
     ldr     r11,  =#0xBBBBBBBB
     ldr     r12,  =#0xCCCCCCCC
     ldr     lr,   =#0xDDDDDDDD
-    push	{r0}
-    b		    .
+    b       .
 
     .align 8
     .type   SysTick_Handler, %function
     //#define in arm assembly
-    .equ TCB.NAME,  0
-    .equ TCB.SP,    4
+    .equ TCB.NEXT,  0
+    .equ TCB.NAME,  4
+    .equ TCB.SP,    8
+
 //   Decrement after
 //   +-------+
 //   |///////| <-	extra spaces depends on stack allign
@@ -72,12 +75,25 @@ taskSwitch:
 //   +-------+
 
 SysTick_Handler:
-    stmdb 	sp!, {r4-r11}
-    push    {lr}
-    ldr     r0,  =mainTcb
-    ldr     sp,  [r0, #TCB.SP]
-    ldr     r0,  =taskOneTcb
-    ldr     sp,  [r0, #TCB.SP]
-    pop     {lr}
-    bx      lr
+    push    {r4-r11}			//push all neccessary register to stack
+    ldr     r4,	=runningTcb		//mainTcb
+    ldr     r4,	[r4]			//r4 pointing to mainTcb
+    str     sp,	[r4, #TCB.SP]	//manTcb.sp = cuurent sp
+	push	{lr}				//save current lr
+	ldr		r0,	=readyQueue		//load readyQueeue address to r0 (readyQueue pointing to taskOneTcb)
+	bl		listRemoveHead		//remove taskOneTcb from readyQueue
+	mov		r5,	r0				//store taskOneTcb to r5
+	ldr		r1, =runningTcb		//load runningTcb address to r1 (runningTcb pointing to mainTcb)
+	str		r0, [r1]			//Instead of pointing to mainTcb now
+								//runningTcb is pointing TaskOneTcb
 
+	ldr		r0, =readyQueue		//load readyQueeue address to r0 (readyQueeue poinitng to NULL)
+	mov		r1,	r4				//r4 contain mainTcb that we have store previously
+								//we cant use r1 direcly because the current address it pointing
+								//to is taskOneTcb
+
+	bl		addLinkedList		//store mainTcb into readyQueue
+	pop		{lr}
+	ldr		sp,	[r5, #TCB.SP]	//current sp pointing to taskOneTcb.sp
+    pop     {r4-r11}
+    bx      lr

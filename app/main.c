@@ -14,22 +14,11 @@
 void taskSwitch(void);
 
 int main(void)	{
-	//ButtonData buttonData;
-	//LedData ledData;
-
-	//configureLED();
-	//initButton();
 	initSysTick();
 	initTcb();
 	taskSwitch();
 
-	//buttonInitData(&buttonData);
-	//ledInitData(&ledData);
-
-    while(1)	{
-    	//buttonSM(&buttonData);
-    	//ledSM(&ledData);
-    }
+    while(1){}
 }
 
 void initSysTick()	{

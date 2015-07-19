@@ -1,12 +1,17 @@
 #ifndef Task_H
 #define Task_H
 
+#include <stdio.h>
 #include <stdint.h>
+#include "LinkedList.h"
 
-typedef struct  {
-  char      *name;
+typedef struct Tcb Tcb;
+
+typedef struct Tcb{
+  Tcb	*next;
+  char	*name;
   uint32_t  sp;
-} Tcb;
+};
 
 typedef struct  {
   uint32_t  R4;
@@ -29,7 +34,8 @@ typedef struct  {
 
 extern uint8_t taskOneStack[1028];
 extern uint8_t taskTwoStack[1028];
+extern LinkedList *head;
 
-void taskOne(void);
+//void taskOne(void);
 
 #endif // Task_H
