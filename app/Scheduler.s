@@ -75,25 +75,23 @@ taskSwitch:
 //   +-------+
 
 SysTick_Handler:
-    push    {r4-r11}			//push all neccessary register to stack
-    ldr     r4,	=runningTcb		//mainTcb
-    ldr     r4,	[r4]			//r4 pointing to mainTcb
-    str     sp,	[r4, #TCB.SP]	//manTcb.sp = cuurent sp
-	push	{lr}				//save current lr
-	ldr		r0,	=readyQueue		//load readyQueeue address to r0 (readyQueue pointing to taskOneTcb)
-	bl		listRemoveHead		//remove taskOneTcb from readyQueue
-	mov		r5,	r0				//store taskOneTcb to r5
-	ldr		r1, =runningTcb		//load runningTcb address to r1 (runningTcb pointing to mainTcb)
-	str		r0, [r1]			//Instead of pointing to mainTcb now
-								//runningTcb is pointing TaskOneTcb
-
-	ldr		r0, =readyQueue		//load readyQueeue address to r0 (readyQueeue poinitng to NULL)
-	mov		r1,	r4				//r4 contain mainTcb that we have store previously
-								//we cant use r1 direcly because the current address it pointing
-								//to is taskOneTcb
-
-	bl		addLinkedList		//store mainTcb into readyQueue
-	pop		{lr}
-	ldr		sp,	[r5, #TCB.SP]	//current sp pointing to taskOneTcb.sp
-    pop     {r4-r11}
-    bx      lr
+    push    	{r4-r11}			//push all neccessary register to stack
+    ldr     	r4,	=runningTcb		//mainTcb
+    ldr     	r4,	[r4]			//r4 pointing to mainTcb
+    str     	sp,	[r4, #TCB.SP]		//manTcb.sp = cuurent sp
+    push	{lr}			//save current lr
+    ldr		r0,	=readyQueue	//load readyQueeue address to r0 (readyQueue pointing to taskOneTcb)
+    bl		listRemoveHead		//remove taskOneTcb from readyQueue
+    mov		r5,	r0		//store taskOneTcb to r5
+    ldr		r1, =runningTcb		//load runningTcb address to r1 (runningTcb pointing to mainTcb)
+    str		r0, [r1]		//Instead of pointing to mainTcb now
+					//runningTcb is pointing TaskOneTcb
+    ldr		r0,	=readyQueue		//load readyQueeue address to r0 (readyQueeue poinitng to NULL)
+    mov		r1,	r4		//r4 contain mainTcb that we have store previously
+					//we cant use r1 direcly because the current address it pointing
+					//to is taskOneTcb
+    bl		addLinkedList		//store mainTcb into readyQueue
+    pop		{lr}
+    ldr		sp,	[r5, #TCB.SP]	//current sp pointing to taskOneTcb.sp
+    pop     	{r4-r11}
+    bx      	lr
